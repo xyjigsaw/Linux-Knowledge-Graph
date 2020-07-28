@@ -1,0 +1,5 @@
+﻿sc_id,des
+软件包管理,
+yum,基于 RPM 的软件包管理器
+apt-get,Debian Linux 发行版中的 APT 软件包管理工具
+rpm,

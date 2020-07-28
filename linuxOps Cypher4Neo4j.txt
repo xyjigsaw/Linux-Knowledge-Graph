@@ -1,0 +1,102 @@
+LOAD CSV WITH HEADERS FROM "file:///e_device.csv" AS line
+CREATE (device_cmd:device_cmd{dec_id:line.dec_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_dir.csv" AS line
+CREATE (dir_cmd:dir_cmd{dc_id:line.dc_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_file.csv" AS line
+CREATE (file_cmd:file_cmd{fc_id:line.fc_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_LinuxDir.csv" AS line
+CREATE (linux_dir:linux_dir{dir_id:line.dir_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_network.csv" AS line
+CREATE (network_cmd:network_cmd{nc_id:line.nc_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_software.csv" AS line
+CREATE (software_cmd:software_cmd{sc_id:line.sc_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_system.csv" AS line
+CREATE (system_cmd:system_cmd{syc_id:line.syc_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_tool.csv" AS line
+CREATE (tool_cmd:tool_cmd{tc_id:line.tc_id, des:line.des});
+
+LOAD CSV WITH HEADERS FROM "file:///e_ops.csv" AS line
+CREATE (ops:ops{o_id:line.o_id, des:line.des});
+
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:device_cmd{dec_id:line.src}), (TO:device_cmd{dec_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:dir_cmd{dc_id:line.src}), (TO:dir_cmd{dc_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:file_cmd{fc_id:line.src}), (TO:file_cmd{fc_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:linux_dir{dir_id:line.src}), (TO:linux_dir{dir_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:network_cmd{nc_id:line.src}), (TO:network_cmd{nc_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:software_cmd{sc_id:line.src}), (TO:software_cmd{sc_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:system_cmd{syc_id:line.src}), (TO:system_cmd{syc_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
+MATCH (FROM:tool_cmd{tc_id:line.src}), (TO:tool_cmd{tc_id:line.tar})
+MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:ops{o_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+
+
+
+
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:device_cmd{dec_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:dir_cmd{dc_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:file_cmd{fc_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:network_cmd{nc_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:software_cmd{sc_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:system_cmd{syc_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:tool_cmd{tc_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
+
+
+LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
+MATCH (FROM:ops{o_id:line.src}), (TO:linux_dir{dir_id:line.tar})
+MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);

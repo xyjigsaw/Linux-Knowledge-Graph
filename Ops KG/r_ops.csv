@@ -1,0 +1,196 @@
+﻿src,rel,tar
+Linux,包含,Linux文件目录
+Linux,包含,系统管理
+Linux,包含,网络管理
+Linux,包含,文件管理
+Linux,包含,目录管理
+Linux,包含,设备管理
+Linux,包含,软件包管理
+Linux,包含,常用工具
+Linux,包含,Linux系统结构/安装
+Linux,包含,Linux 内置编辑器
+Linux,包含,Linux 拓展编辑器
+运维监控,包含,Zabbix
+运维监控,包含,Nagios/Cacti
+运维监控,包含,Ganglia
+运维监控,包含,Prometheus
+脚本,包含,Shell
+脚本,包含,Python
+脚本,包含,Perl
+基础服务,包含,HTTP
+基础服务,包含,DNS
+基础服务,包含,FTP
+基础服务,包含,NTP
+系统管理,包含,进程管理
+系统管理,包含,内存管理
+系统管理,包含,磁盘管理
+系统管理,包含,权限管理
+云计算/虚拟化,包含,KVM
+云计算/虚拟化,包含,Openstack
+云计算/虚拟化,包含,Proxmox
+Linux系统结构/安装,包含,U盘安装/网络安装
+Linux系统结构/安装,包含,init系统/systemd
+Zabbix,包含,Zabbix发现与注册
+Zabbix,包含,Zabbix proxy分部署架构
+Nagios/Cacti,包含,Nagios与Cacti整合
+Nagios/Cacti,包含,Nagios集成告警
+Ganglia,包含,Ganglia监控hadoop
+Ganglia,包含,Ganglia扩展API
+Prometheus,包含,Prometheus服务监控
+Prometheus,包含,Prometheus与grafana
+进程管理,包含,lsof
+进程管理,包含,netstat
+内存管理,包含,cache
+内存管理,包含,swap
+磁盘管理,包含,fdisk
+磁盘管理,包含,parted
+权限管理,包含,chown
+权限管理,包含,chmod
+KVM,包含,KVM基础功能
+KVM,包含,KVM管理工具
+Openstack,包含,计算服务-Nova
+Openstack,包含,块存储服务-Cinder
+Openstack,包含,网络服务-Neutron
+Proxmox,包含,Proxmox桌面虚拟化
+Proxmox,包含,Proxmox服务器虚拟化
+Linux 内置编辑器,包含,vi
+Linux 内置编辑器,包含,nano
+Linux 拓展编辑器,包含,vim或者gvim
+Linux 拓展编辑器,包含,emacs
+Linux 拓展编辑器,包含,vile
+Linux系统结构/安装,包含,Centos
+Linux系统结构/安装,包含,Debian
+Linux系统结构/安装,包含,Ubuntu
+Linux系统结构/安装,包含,Gentoo
+Web运维,包含,Web基础架构
+Web运维,包含,数据库与架构
+Web运维,包含,Web安全
+Web运维,包含,自动化运维
+Web运维,包含,集群架构
+Web运维,包含,存储与数据
+Web运维,包含,云平台
+Web基础架构,包含,Apache
+Web基础架构,包含,Nginx
+Web基础架构,包含,Tomcat
+Web基础架构,包含,TCP/HTTP
+数据库与架构,包含,MySQL
+数据库与架构,包含,Redis
+数据库与架构,包含,DB架构
+数据库与架构,包含,Mongodb
+数据库与架构,包含,postgreSQL
+Web安全,包含,DDOS
+Web安全,包含,CC攻击
+Web安全,包含,Web Shell
+Web安全,包含,VPN
+Web安全,包含,Iptables
+Web安全,包含,IDS/IPS
+自动化运维,包含,Ansible
+自动化运维,包含,SaltStack
+自动化运维,包含,Puppet
+集群架构,包含,LVS
+集群架构,包含,Keepalived
+集群架构,包含,Haproxy
+集群架构,包含,Nginx负载均衡
+存储与数据,包含,gitlab
+存储与数据,包含,git
+存储与数据,包含,Jenkins
+存储与数据,包含,docker镜像
+云平台,包含,阿里云
+云平台,包含,腾讯云
+MySQL,包含,MySQL调优
+MySQL,包含,MySQL MHA
+Redis,包含,Redis主从复制
+Redis,包含,Redis Cluster
+DB架构,包含,主从负责
+DB架构,包含,读写分离
+阿里云,包含,ECS
+阿里云,包含,SLB
+腾讯云,包含,CVM
+腾讯云,包含,LB
+大数据运维,包含,分布式计算平台
+大数据运维,包含,资源调度
+大数据运维,包含,分布式存储
+大数据运维,包含,日志收集
+大数据运维,包含,流式计算
+大数据运维,包含,数据分析
+大数据运维,包含,机器学习
+大数据运维,包含,数据可视化
+大数据运维,包含,消息队列
+大数据运维,包含,编程语言
+大数据运维,包含,数据挖掘
+分布式计算平台,包含,Hadoop
+分布式计算平台,包含,Spark
+分布式计算平台,包含,Apache Flink
+资源调度,包含,Yarn
+资源调度,包含,Mesos
+分布式存储,包含,HDFS
+日志收集,包含,Scribe
+日志收集,包含,Flume
+日志收集,包含,Logstash
+日志收集,包含,Filebeat
+日志收集,包含,fluentd
+流式计算,包含,Storm
+流式计算,包含,Spark Streaming
+数据分析,包含,Hive
+数据分析,包含,Pig
+数据分析,包含,Spark Shell
+数据分析,包含,Spark SQL
+数据分析,包含,Kylin
+数据分析,包含,Impala
+数据分析,包含,Elastic search
+机器学习,包含,机器学习基础
+机器学习,包含,机器学习工具
+数据可视化,包含,R
+数据可视化,包含,Echarts
+数据可视化,包含,Kibana
+消息队列,包含,Kafka
+消息队列,包含,ZeroMQ
+消息队列,包含,ActiveMQ
+消息队列,包含,RabbitMQ
+编程语言,包含,Java
+编程语言,包含,Python
+编程语言,包含,Ruby
+编程语言,包含,Scala
+数据挖掘,包含,Matlab
+数据挖掘,包含,SPSS
+机器学习基础,包含,推荐系统
+机器学习基础,包含,神经网络
+机器学习基础,包含,文本挖掘
+机器学习基础,包含,贝叶斯分类
+机器学习工具,包含,Spark Mlib
+机器学习工具,包含,Mahout
+机器学习工具,包含,Tensorflow
+容器运维,包含,Docker
+容器运维,包含,容器编排与调度
+容器运维,包含,容器管理与界面工具
+容器运维,包含,容器日志收集
+容器运维,包含,容器平台
+Docker,包含,Docker核心组件
+Docker,包含,Docker数据持久化
+Docker,包含,Docker网络
+Docker,包含,Docker安全
+容器编排与调度,包含,Docker Swarm
+容器编排与调度,包含,Docker Compose
+容器编排与调度,包含,Docker Machine
+容器编排与调度,包含,Kubernetes ( K8S )
+容器管理与界面工具,包含,DockerUI
+容器管理与界面工具,包含,Fabric8
+容器管理与界面工具,包含,Shipyard
+容器管理与界面工具,包含,Triton
+容器日志收集,包含,Splunk
+容器日志收集,包含,Flume
+容器日志收集,包含,Fluent
+容器日志收集,包含,Logstash
+容器平台,包含,DaoCloud
+容器平台,包含,TenxCloud
+容器平台,包含,CSphere
+容器平台,包含,StackDock
+Docker核心组件,包含,镜像
+Docker核心组件,包含,容器
+Docker核心组件,包含,仓库
+Docker数据持久化,包含,Volume
+Docker数据持久化,包含,bind mount
+Docker网络,包含,容器互联
+Docker网络,包含,端口映射
+Docker安全,包含,LXC
+Docker安全,包含,RunC

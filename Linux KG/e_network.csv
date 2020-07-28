@@ -1,0 +1,39 @@
+﻿nc_id,des
+网络管理,
+网络应用,
+curl,利用 URL 规则在命令行下工作的文件传输工具
+wget,下载文件工具
+telnet,登录远程主机和管理
+高级网络,
+ip,网络配置工具
+iptables,防火墙软件
+网络测试,
+iperf,网络性能测试工具
+host,常用的分析域名查询工具
+nslookup,查询域名 DNS 信息的工具
+dig,域名查询工具
+ping,测试主机之间网络的联通性
+netstat,查看网络系统状态信息
+网络安全,
+ssh,openssh 套件中的客户端连接工具
+ssh-keygen,为 SSH 生成、管理和转换认证密钥
+网络配置,
+ifconfig,配置和显示系统网卡的网络参数
+route,查看网关命令
+curl,
+wget,
+telnet,
+ip,
+iptables,
+iperf,
+host,
+nslookup,
+dig,
+ping,
+netstat,
+traceroute,
+tcpdump,
+ssh,
+ssh-keygen,
+ifconfig,
+route,

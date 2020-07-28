@@ -1,0 +1,55 @@
+﻿syc_id,des
+系统管理,
+系统安全,
+sudo,以其他身份来执行命令
+进程和作业,
+systemctl,系统服务管理器指令
+service,控制系统服务的实用工具
+w,显示目前登入系统的用户信息
+watch,周期性执行给定的指令
+pidof,查找指定名称的进程的进程 ID 号
+ps,报告当前系统的进程状态
+telint,切换当前正在运行系统的运行等级
+init,所有 Linux 进程的父进程
+at,在指定时间执行一个任务
+crontab,提交和管理用户的需要周期性执行的任务
+nohup,将程序以忽略挂起信号的方式运行起来
+kill,删除执行中的程序或工作
+pkill,可以按照进程名杀死进程
+skill,向选定的进程发送信号冻结进程
+killall,使用进程的名称来杀死一组进程
+用户和工作组,
+useradd,新建用户
+userdel,删除用户
+passwod,修改用户密码
+usermod,修改用户属性
+chage,修改用户属性
+change,修改账号和密码的有效期限
+id,显示用户的 ID 以及所属群组的 ID
+su,用于切换当前用户身份到其他用户身份
+进程信息,
+PID,进程 ID，进程的唯一标识
+USER,进程所有者的实际用户名
+PR,进程的调度优先级
+NI,进程的 nice 值（优先级）越小的值代表优先级越高
+VIRT,进程使用的虚拟内存
+RES,驻留内存大小。驻留内存是任务使用的非交换物理内存大小。
+SHR,进程使用的共享内存。
+S,进程的状态
+%CPU,自从上一次更新时到现在任务所使用的 CPU 时间百分比。
+%MEM,进程使用的可用物理内存百分比。
+TIME+,任务启动后到现在所使用的全部 CPU 时间，精确到百分之一秒。
+COMMAND,运行进程所使用的命令。
+Unit,
+Service unit,系统服务
+Target unit,多个 Unit 构成的一个组
+Device Unit,硬件设备
+Mount Unit,文件系统的挂载点
+Automount Unit,自动挂载点
+Path Unit,文件或路径
+Scope Unit,不是由 Systemd 启动的外部进程
+Slice Unit,进程组
+Snapshot Unit,Systemd 快照，可以切回某个快照
+Socket Unit,进程间通信的 socket
+Swap Unit,swap 文件
+Timer Unit,定时器

@@ -1,0 +1,35 @@
+﻿dir_id,des
+Linux文件目录,
+系统文件目录,
+/root,Root Directories 系统管理员的主目录
+/home/username,Home Directories 普通用户的主目录
+/bin,User Binaries 供所有用户使用的完成 基本维护任务的命令
+/sbin,System Binaries 存放系统管理员使用的 管理程序命令
+/lib,System Libraries 系统最基本的 共享链接库和内核模块
+/etc,Configuration Files 系统和应用软件的 配置文件
+/tmp,Temporary Files 临时文件的存放目录
+/proc,Process Information 虚拟文件系统，目录挂载了一个虚拟文件系统，以虚拟文件的形式映射系统与进程在内存中的运行时信息。
+/var,Variable Files 存放在系统 运行时可能会更改的数据，如程序数据、日志等；
+/usr,Unix Software Resource Unix 操作系统软件资源所放置的目录，而非用户的数据
+/usr/bin,用户需要执行的命令，例如压缩、文件查找、客户端等程序
+/usr/sbin,系统运行不必须的命令，例如服务端程序、用户管理等程序
+/usr/include,C / C++ 头文件
+/usr/lib,普通用户使用的库文件
+/usr/local,个人安装的软件，通常需要手动指定；与 /usr 目录的目录结构相似
+其他文件目录,
+/srv,Service Data
+/media,Removable Devices
+/boot,Boot Loader Files 启动 Linux 时的核心文件
+/dev,Device Files 所有 Linux 的外围设备
+/lost+found,Lost Found Files 无家可归文件的避难所
+/mnt,Mount Directory 空目录，用于提供给用户临时挂接别的文件系统
+/opt,Optional add-on Apps 第三方工具使用的安装目录
+/proc/cpuinfo,处理器的相关信息
+/proc/version,系统的内核版本号
+/proc/<pid>/cmdline,启动当前进程的完整命令
+/proc/<pid>/cwd,当前进程工作目录的软链
+/proc/<pid>/environ,当前进程的环境变量列表
+/proc/<pid>/exe,启动当前进程的可执行文件的软链
+/proc/<pid>/fd,目录，保持当前进程持有的文件描述符（以软链形式存在，指向实际文件）
+/proc/<pid>/limits,当前进程使用资源的软限制、硬限制（和单位）
+/proc/<pid>task,目录，保存当前进程所运行的每一个线程的相关信息；以 <tid> 作为各线程的目录名，目录结构与 /proc/<pid> 相似
