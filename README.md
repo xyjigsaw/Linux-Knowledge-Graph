@@ -10,7 +10,7 @@ More data will be added in the future.
 ## Linux KG
 These folders contain entities and relationships for **Linux** stored in csv.
 
-Original data is in [LinuxKG.xlsx](Linux KG/LinuxKG.xlsx).
+Original data is in [LinuxKG.xlsx](Linux%20KG/LinuxKG.xlsx).
 
 |file name|description|length|
 |:-----:|:----:|:----:|
@@ -28,7 +28,7 @@ Original data is in [LinuxKG.xlsx](Linux KG/LinuxKG.xlsx).
 ## Ops KG
 These folders contain entities and relationships for **Linux operation and maintenance** stored in csv.
 
-Original data is in [opKG.xlsx](Ops KG/opKG.xlsx).
+Original data is in [opKG.xlsx](Ops%20KG/opKG.xlsx).
 
 |file name|description|length|
 |:-----:|:----:|:----:|
