@@ -26,10 +26,10 @@ LOAD CSV WITH HEADERS FROM "file:///e_ops.csv" AS line
 CREATE (ops:ops{o_id:line.o_id, des:line.des});
 
 
+
 LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
 MATCH (FROM:device_cmd{dec_id:line.src}), (TO:device_cmd{dec_id:line.tar})
 MERGE (FROM)-[linux_rel: linux_rel{type:line.rel}]->(TO);
-
 
 LOAD CSV WITH HEADERS FROM "file:///r_linux.csv" AS line
 MATCH (FROM:dir_cmd{dc_id:line.src}), (TO:dir_cmd{dc_id:line.tar})
@@ -66,8 +66,6 @@ MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
 
 
 
-
-
 LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
 MATCH (FROM:ops{o_id:line.src}), (TO:device_cmd{dec_id:line.tar})
 MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
@@ -95,7 +93,6 @@ MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
 LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
 MATCH (FROM:ops{o_id:line.src}), (TO:tool_cmd{tc_id:line.tar})
 MERGE (FROM)-[ops_rel: ops_rel{type:line.rel}]->(TO);
-
 
 LOAD CSV WITH HEADERS FROM "file:///r_ops.csv" AS line
 MATCH (FROM:ops{o_id:line.src}), (TO:linux_dir{dir_id:line.tar})
