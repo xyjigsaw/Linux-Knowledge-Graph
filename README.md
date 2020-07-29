@@ -42,3 +42,6 @@ Move all .csv files to Neo4j **import** directory.
 
 Then execute the [CYPHER](Cypher4Neo4j.txt) code in the Neo4j console.
 
+## OmegaXYZ
+
+More articles: [omegaxyz.com](https://www.omegaxyz.com/)
