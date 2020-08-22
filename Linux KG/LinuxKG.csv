@@ -1,0 +1,543 @@
+﻿
+Linux文件目录,包含,系统文件目录
+Linux文件目录,包含,其他文件目录
+系统文件目录,包含,/root
+系统文件目录,包含,/home/username
+系统文件目录,包含,/bin
+系统文件目录,包含,/sbin
+系统文件目录,包含,/lib
+系统文件目录,包含,/etc
+系统文件目录,包含,/tmp
+系统文件目录,包含,/proc
+系统文件目录,包含,/var
+系统文件目录,包含,/usr
+/root,语义,Root Directories
+/home/username,语义,Home Directories
+/bin,语义,User Binaries
+/sbin,语义,System Binaries
+/lib,语义,System Libraries
+/etc,语义,Configuration Files
+/tmp,语义,Temporary Files
+/proc,语义,Process Information
+/var,语义,Variable Files
+/usr,语义,Unix Software Resource
+/root,描述,系统管理员的主目录
+/home/username,描述,普通用户的主目录
+/bin,描述,供所有用户使用的完成 基本维护任务的命令
+/sbin,描述,存放系统管理员使用的 管理程序命令
+/lib,描述,系统最基本的 共享链接库和内核模块
+/etc,描述,系统和应用软件的 配置文件
+/tmp,描述,临时文件的存放目录
+/proc,描述,虚拟文件系统，目录挂载了一个虚拟文件系统，以虚拟文件的形式映射系统与进程在内存中的运行时信息。
+/var,描述,存放在系统 运行时可能会更改的数据，如程序数据、日志等；
+/usr,描述,Unix 操作系统软件资源所放置的目录，而非用户的数据
+/usr,子目录,/usr/bin
+/usr,子目录,/usr/sbin
+/usr,子目录,/usr/include
+/usr,子目录,/usr/lib
+/usr,子目录,/usr/local
+/usr,子目录,/usr/libexec
+/usr,子目录,/usr/share
+/usr,子目录,/usr/standalone
+/usr/bin,描述,用户需要执行的命令，例如压缩、文件查找、客户端等程序
+/usr/sbin,描述,系统运行不必须的命令，例如服务端程序、用户管理等程序
+/usr/include,描述,C / C++ 头文件
+/usr/lib,描述,普通用户使用的库文件
+/usr/local,描述,个人安装的软件，通常需要手动指定；与 /usr 目录的目录结构相似
+其他文件目录,包含,/boot
+其他文件目录,包含,/dev
+其他文件目录,包含,/lost+found
+其他文件目录,包含,/mnt
+其他文件目录,包含,/opt
+其他文件目录,包含,/srv
+其他文件目录,包含,/media
+/boot,语义,Boot Loader Files
+/dev,语义,Device Files
+/lost+found,语义,Lost Found Files
+/mnt,语义,Mount Directory
+/opt,语义,Optional add-on Apps
+/srv,语义,Service Data
+/media,语义,Removable Devices
+/boot,描述,启动 Linux 时的核心文件
+/dev,描述,所有 Linux 的外围设备
+/lost+found,描述,无家可归文件的避难所
+/mnt,描述,空目录，用于提供给用户临时挂接别的文件系统
+/opt,描述,第三方工具使用的安装目录
+/proc,子目录,/proc/cpuinfo
+/proc,子目录,/proc/version
+/proc/cpuinfo,描述,处理器的相关信息
+/proc/version,描述,系统的内核版本号
+/proc,子目录,/proc/<pid>/cmdline
+/proc,子目录,/proc/<pid>/cwd
+/proc,子目录,/proc/<pid>/environ
+/proc,子目录,/proc/<pid>/exe
+/proc,子目录,/proc/<pid>/fd
+/proc,子目录,/proc/<pid>/limits
+/proc,子目录,/proc/<pid>task
+/proc/<pid>/cmdline,描述,启动当前进程的完整命令
+/proc/<pid>/cwd,描述,当前进程工作目录的软链
+/proc/<pid>/environ,描述,当前进程的环境变量列表
+/proc/<pid>/exe,描述,启动当前进程的可执行文件的软链
+/proc/<pid>/fd,描述,目录，保持当前进程持有的文件描述符（以软链形式存在，指向实际文件）
+/proc/<pid>/limits,描述,当前进程使用资源的软限制、硬限制（和单位）
+/proc/<pid>task,描述,目录，保存当前进程所运行的每一个线程的相关信息；以 <tid> 作为各线程的目录名，目录结构与 /proc/<pid> 相似
+系统管理,包含,系统安全
+系统安全,包含,sudo
+sudo,描述,以其他身份来执行命令
+系统管理,包含,进程和作业
+进程和作业,包含,systemctl
+进程和作业,包含,service
+进程和作业,包含,w
+进程和作业,包含,watch
+进程和作业,包含,pidof
+进程和作业,包含,ps
+进程和作业,包含,telint
+进程和作业,包含,init
+进程和作业,包含,at
+进程和作业,包含,crontab
+进程和作业,包含,nohup
+进程和作业,包含,kill
+进程和作业,包含,pkill
+进程和作业,包含,skill
+进程和作业,包含,killall
+systemctl,描述,系统服务管理器指令
+service,描述,控制系统服务的实用工具
+w,描述,显示目前登入系统的用户信息
+watch,描述,周期性执行给定的指令
+pidof,描述,查找指定名称的进程的进程 ID 号
+ps,描述,报告当前系统的进程状态
+telint,描述,切换当前正在运行系统的运行等级
+init,描述,所有 Linux 进程的父进程
+at,描述,在指定时间执行一个任务
+crontab,描述,提交和管理用户的需要周期性执行的任务
+nohup,描述,将程序以忽略挂起信号的方式运行起来
+kill,描述,删除执行中的程序或工作
+pkill,描述,可以按照进程名杀死进程
+skill,描述,向选定的进程发送信号冻结进程
+killall,描述,使用进程的名称来杀死一组进程
+系统管理,包含,用户和工作组
+用户和工作组,包含,useradd
+用户和工作组,包含,userdel
+用户和工作组,包含,passwod
+用户和工作组,包含,usermod
+用户和工作组,包含,chage
+用户和工作组,包含,change
+用户和工作组,包含,id
+用户和工作组,包含,su
+useradd,描述,新建用户
+userdel,描述,删除用户
+passwod,描述,修改用户密码
+usermod,描述,修改用户属性
+chage,描述,修改用户属性
+change,描述,修改账号和密码的有效期限
+id,描述,显示用户的 ID 以及所属群组的 ID
+su,描述,用于切换当前用户身份到其他用户身份
+系统管理,包含,进程信息
+进程信息,包含,PID
+进程信息,包含,USER
+进程信息,包含,PR
+进程信息,包含,NI
+进程信息,包含,VIRT
+进程信息,包含,RES
+进程信息,包含,SHR
+进程信息,包含,S
+进程信息,包含,%CPU
+进程信息,包含,%MEM
+进程信息,包含,TIME+
+进程信息,包含,COMMAND
+PID,描述,进程 ID，进程的唯一标识
+USER,描述,进程所有者的实际用户名
+PR,描述,进程的调度优先级
+NI,描述,进程的 nice 值（优先级）越小的值代表优先级越高
+VIRT,描述,进程使用的虚拟内存
+RES,描述,驻留内存大小。驻留内存是任务使用的非交换物理内存大小。
+SHR,描述,进程使用的共享内存。
+S,描述,进程的状态
+%CPU,描述,自从上一次更新时到现在任务所使用的 CPU 时间百分比。
+%MEM,描述,进程使用的可用物理内存百分比。
+TIME+,描述,任务启动后到现在所使用的全部 CPU 时间，精确到百分之一秒。
+COMMAND,描述,运行进程所使用的命令。
+systemctl,影响,Unit
+Unit,包含,Service unit
+Unit,包含,Target unit
+Unit,包含,Device Unit
+Unit,包含,Mount Unit
+Unit,包含,Automount Unit
+Unit,包含,Path Unit
+Unit,包含,Scope Unit
+Unit,包含,Slice Unit
+Unit,包含,Snapshot Unit
+Unit,包含,Socket Unit
+Unit,包含,Swap Unit
+Unit,包含,Timer Unit
+Service unit,描述,系统服务
+Target unit,描述,多个 Unit 构成的一个组
+Device Unit,描述,硬件设备
+Mount Unit,描述,文件系统的挂载点
+Automount Unit,描述,自动挂载点
+Path Unit,描述,文件或路径
+Scope Unit,描述,不是由 Systemd 启动的外部进程
+Slice Unit,描述,进程组
+Snapshot Unit,描述,Systemd 快照，可以切回某个快照
+Socket Unit,描述,进程间通信的 socket
+Swap Unit,描述,swap 文件
+Timer Unit,描述,定时器
+网络管理,包含,网络应用
+网络管理,包含,高级网络
+网络管理,包含,网络测试
+网络管理,包含,网络安全
+网络管理,包含,网络配置
+网络应用,包含,curl
+网络应用,包含,wget
+网络应用,包含,telnet
+curl,描述,利用 URL 规则在命令行下工作的文件传输工具
+wget,描述,下载文件工具
+telnet,描述,登录远程主机和管理
+高级网络,包含,ip
+高级网络,包含,iptables
+ip,描述,网络配置工具
+iptables,描述,防火墙软件
+网络测试,包含,iperf
+网络测试,包含,host
+网络测试,包含,nslookup
+网络测试,包含,dig
+网络测试,包含,ping
+网络测试,包含,netstat
+网络测试,包含,traceroute
+网络测试,包含,tcpdump
+网络测试,包含,netstat
+iperf,描述,网络性能测试工具
+host,描述,常用的分析域名查询工具
+nslookup,描述,查询域名 DNS 信息的工具
+dig,描述,域名查询工具
+ping,描述,测试主机之间网络的联通性
+netstat,描述,查看网络系统状态信息
+网络安全,包含,ssh
+网络安全,包含,ssh-keygen
+ssh,描述,openssh 套件中的客户端连接工具
+ssh-keygen,描述,为 SSH 生成、管理和转换认证密钥
+网络配置,包含,ifconfig
+网络配置,包含,route
+ifconfig,描述,配置和显示系统网卡的网络参数
+route,描述,查看网关命令
+文件管理,包含,文件传输
+文件传输,包含,ftp
+文件传输,包含,scp
+ftp,描述,用来设置文件系统相关功能
+scp,描述,加密的方式在本地主机和远程主机之间复制文件
+文件管理,包含,文件处理
+文件处理,包含,touch
+文件处理,包含,rename
+文件处理,包含,dirname
+文件处理,包含,ln
+文件处理,包含,cat
+touch,描述,创建新的空文件
+rename,描述,用字符串替换的方式批量改变文件名
+dirname,描述,去除文件名中的非目录部分
+ln,描述,用来为文件创建连接
+cat,描述,连接文件并打印到标准输出设备上
+文件管理,包含,文件查找和比较
+文件查找和比较,包含,diff
+文件查找和比较,包含,which
+文件查找和比较,包含,find
+文件查找和比较,包含,whereis
+diff,描述,比较给定的两个文件的不同
+which,描述,查找并显示给定命令的绝对路径
+find,描述,在指定目录下查找文件
+whereis,描述,查找二进制程序、代码等相关文件路径
+文件管理,包含,文件内容查看
+文件内容查看,包含,tail
+文件内容查看,包含,head
+文件内容查看,包含,less
+文件内容查看,包含,more
+tail,描述,在屏幕上显示指定文件的末尾若干行
+head,描述,在屏幕上显示指定文件的开头若干行
+less,描述,分屏上下范爷浏览文件内容
+more,描述,显示文件内容，每次显示一屏
+文件管理,包含,文件编辑
+文件编辑,包含,vi
+文件编辑,包含,sed
+vi,描述,功能强大的纯文本编辑器
+sed,描述,自动编辑文件，简化对文件的反复操作
+文件管理,包含,文件权限属性设置
+文件权限属性设置,包含,chmod
+文件权限属性设置,包含,chown
+文件权限属性设置,包含,stat
+文件权限属性设置,包含,file
+chmod,描述,用来变更文件或目录的权限
+chown,描述,用来变更文件或目录的拥有者或所属群组
+stat,描述,用于显示文件的状态信息
+file,描述,用来探测给定文件的类型
+文件管理,包含,文件过滤分隔与合并
+文件过滤分隔与合并,包含,grep
+文件过滤分隔与合并,包含,look
+文件过滤分隔与合并,包含,tac
+文件过滤分隔与合并,包含,sort
+grep,描述,强大的文本搜索工具
+look,描述,显示文件中以指定字符串开头的任意行
+tac,描述,将文件已行为单位的反序输出
+sort,描述,将文件进行排序并输出
+文件管理,包含,文件压缩与解压
+文件压缩与解压,包含,tar
+文件压缩与解压,包含,gzip
+文件压缩与解压,包含,gunzip
+文件压缩与解压,包含,zip
+文件压缩与解压,包含,unzip
+tar,描述,Linux 下的归档使用工具，用于打包和备份
+gzip,描述,用于压缩文件
+gunzip,描述,用于解压缩文件
+zip,描述,可以用来解压缩文件
+unzip,描述,用于解压缩由 zip 命令压缩的压缩包
+文件管理,包含,文件备份和恢复
+目录管理,包含,install
+目录管理,包含,tree
+目录管理,包含,popd
+目录管理,包含,dirs
+目录管理,包含,rmdir
+目录管理,包含,mkdir
+目录管理,包含,rm
+目录管理,包含,pwd
+目录管理,包含,ls
+目录管理,包含,mv
+目录管理,包含,cp
+目录管理,包含,cd
+install,描述,安装或升级软件或备份数据
+tree,描述,树状图列出目录的内容
+popd,描述,用于删除目录栈中的记录
+dirs,描述,显示目录记录
+rmdir,描述,删除空目录
+mkdir,描述,创建目录
+rm,描述,删除给定的文件或目录
+pwd,描述,绝对路径方式显示用户当前工作目录
+ls,描述,显示目录内容列表
+mv,描述,用来对文件或目录重新命名
+cp,描述,将源文件或目录拷贝到目标文件或目录中
+cd,描述,切换用户当前工作目录
+设备管理,包含,硬件管理
+设备管理,包含,磁盘管理
+设备管理,包含,内核与模块管理
+设备管理,包含,性能监测与优化
+硬件管理,包含,hwclock
+hwclock,描述,显示与设定硬件时钟
+磁盘管理,包含,fdisk
+磁盘管理,包含,df
+磁盘管理,包含,du
+fdisk,描述,用于观察硬盘实体使用情况
+df,描述,显示磁盘的相关信息
+du,描述,显示每个文件和目录的磁盘使用空间
+内核与模块管理,包含,uname
+uname,描述,显示 Linux 系统信息
+性能监测与优化,包含,lsof
+性能监测与优化,包含,time
+性能监测与优化,包含,free
+性能监测与优化,包含,top
+lsof,描述,显示 Linux 系统当前一打开的所有文件列表
+time,描述,统计命令所花费的事件
+free,描述,显示内存的使用情况
+top,描述,显示或管理执行中的程序
+软件包管理,包含,yum
+软件包管理,包含,apt-get
+软件包管理,包含,rpm
+yum,描述,基于 RPM 的软件包管理器
+apt-get,描述,Debian Linux 发行版中的 APT 软件包管理工具
+常用工具,包含,date
+常用工具,包含,xargs
+date,描述,date 命令用来输出当前的系统时间，可以使用 -s 参数指定输出格式。但设置时间涉及到设置硬件，所以有另外一个命令叫做 hwclock。
+xargs,描述,xargs 读取输入源，然后逐行处理。这个命令非常有用。举个栗子，删除目录中的所有 class 文件。
+常用工具,包含,export
+export,描述,很多安装了 jdk 的同学找不到 java 命令，export 就可以帮你办到它。export 用来设定一些环境变量，env 命令能看到当前系统中所有的环境变量。
+Linux,包含,Linux文件目录
+Linux,包含,系统管理
+Linux,包含,网络管理
+Linux,包含,文件管理
+Linux,包含,目录管理
+Linux,包含,设备管理
+Linux,包含,软件包管理
+Linux,包含,常用工具
+Linux,包含,Linux系统结构/安装
+Linux,包含,Linux 内置编辑器
+Linux,包含,Linux 拓展编辑器
+运维监控,包含,Zabbix
+运维监控,包含,Nagios/Cacti
+运维监控,包含,Ganglia
+运维监控,包含,Prometheus
+脚本,包含,Shell
+脚本,包含,Python
+脚本,包含,Perl
+基础服务,包含,HTTP
+基础服务,包含,DNS
+基础服务,包含,FTP
+基础服务,包含,NTP
+系统管理,包含,进程管理
+系统管理,包含,内存管理
+系统管理,包含,磁盘管理
+系统管理,包含,权限管理
+云计算/虚拟化,包含,KVM
+云计算/虚拟化,包含,Openstack
+云计算/虚拟化,包含,Proxmox
+Linux系统结构/安装,包含,U盘安装/网络安装
+Linux系统结构/安装,包含,init系统/systemd
+Zabbix,包含,Zabbix发现与注册
+Zabbix,包含,Zabbix proxy分部署架构
+Nagios/Cacti,包含,Nagios与Cacti整合
+Nagios/Cacti,包含,Nagios集成告警
+Ganglia,包含,Ganglia监控hadoop
+Ganglia,包含,Ganglia扩展API
+Prometheus,包含,Prometheus服务监控
+Prometheus,包含,Prometheus与grafana
+进程管理,包含,lsof
+进程管理,包含,netstat
+内存管理,包含,cache
+内存管理,包含,swap
+磁盘管理,包含,fdisk
+磁盘管理,包含,parted
+权限管理,包含,chown
+权限管理,包含,chmod
+KVM,包含,KVM基础功能
+KVM,包含,KVM管理工具
+Openstack,包含,计算服务-Nova
+Openstack,包含,块存储服务-Cinder
+Openstack,包含,网络服务-Neutron
+Proxmox,包含,Proxmox桌面虚拟化
+Proxmox,包含,Proxmox服务器虚拟化
+Linux 内置编辑器,包含,vi
+Linux 内置编辑器,包含,nano
+Linux 拓展编辑器,包含,vim或者gvim
+Linux 拓展编辑器,包含,emacs
+Linux 拓展编辑器,包含,vile
+Linux系统结构/安装,包含,Centos
+Linux系统结构/安装,包含,Debian
+Linux系统结构/安装,包含,Ubuntu
+Linux系统结构/安装,包含,Gentoo
+Web运维,包含,Web基础架构
+Web运维,包含,数据库与架构
+Web运维,包含,Web安全
+Web运维,包含,自动化运维
+Web运维,包含,集群架构
+Web运维,包含,存储与数据
+Web运维,包含,云平台
+Web基础架构,包含,Apache
+Web基础架构,包含,Nginx
+Web基础架构,包含,Tomcat
+Web基础架构,包含,TCP/HTTP
+数据库与架构,包含,MySQL
+数据库与架构,包含,Redis
+数据库与架构,包含,DB架构
+数据库与架构,包含,Mongodb
+数据库与架构,包含,postgreSQL
+Web安全,包含,DDOS
+Web安全,包含,CC攻击
+Web安全,包含,Web Shell
+Web安全,包含,VPN
+Web安全,包含,Iptables
+Web安全,包含,IDS/IPS
+自动化运维,包含,Ansible
+自动化运维,包含,SaltStack
+自动化运维,包含,Puppet
+集群架构,包含,LVS
+集群架构,包含,Keepalived
+集群架构,包含,Haproxy
+集群架构,包含,Nginx负载均衡
+存储与数据,包含,gitlab
+存储与数据,包含,git
+存储与数据,包含,Jenkins
+存储与数据,包含,docker镜像
+云平台,包含,阿里云
+云平台,包含,腾讯云
+MySQL,包含,MySQL调优
+MySQL,包含,MySQL MHA
+Redis,包含,Redis主从复制
+Redis,包含,Redis Cluster
+DB架构,包含,主从负责
+DB架构,包含,读写分离
+阿里云,包含,ECS
+阿里云,包含,SLB
+腾讯云,包含,CVM
+腾讯云,包含,LB
+大数据运维,包含,分布式计算平台
+大数据运维,包含,资源调度
+大数据运维,包含,分布式存储
+大数据运维,包含,日志收集
+大数据运维,包含,流式计算
+大数据运维,包含,数据分析
+大数据运维,包含,机器学习
+大数据运维,包含,数据可视化
+大数据运维,包含,消息队列
+大数据运维,包含,编程语言
+大数据运维,包含,数据挖掘
+分布式计算平台,包含,Hadoop
+分布式计算平台,包含,Spark
+分布式计算平台,包含,Apache Flink
+资源调度,包含,Yarn
+资源调度,包含,Mesos
+分布式存储,包含,HDFS
+日志收集,包含,Scribe
+日志收集,包含,Flume
+日志收集,包含,Logstash
+日志收集,包含,Filebeat
+日志收集,包含,fluentd
+流式计算,包含,Storm
+流式计算,包含,Spark Streaming
+数据分析,包含,Hive
+数据分析,包含,Pig
+数据分析,包含,Spark Shell
+数据分析,包含,Spark SQL
+数据分析,包含,Kylin
+数据分析,包含,Impala
+数据分析,包含,Elastic search
+机器学习,包含,机器学习基础
+机器学习,包含,机器学习工具
+数据可视化,包含,R
+数据可视化,包含,Echarts
+数据可视化,包含,Kibana
+消息队列,包含,Kafka
+消息队列,包含,ZeroMQ
+消息队列,包含,ActiveMQ
+消息队列,包含,RabbitMQ
+编程语言,包含,Java
+编程语言,包含,Python
+编程语言,包含,Ruby
+编程语言,包含,Scala
+数据挖掘,包含,Matlab
+数据挖掘,包含,SPSS
+机器学习基础,包含,推荐系统
+机器学习基础,包含,神经网络
+机器学习基础,包含,文本挖掘
+机器学习基础,包含,贝叶斯分类
+机器学习工具,包含,Spark Mlib
+机器学习工具,包含,Mahout
+机器学习工具,包含,Tensorflow
+容器运维,包含,Docker
+容器运维,包含,容器编排与调度
+容器运维,包含,容器管理与界面工具
+容器运维,包含,容器日志收集
+容器运维,包含,容器平台
+Docker,包含,Docker核心组件
+Docker,包含,Docker数据持久化
+Docker,包含,Docker网络
+Docker,包含,Docker安全
+容器编排与调度,包含,Docker Swarm
+容器编排与调度,包含,Docker Compose
+容器编排与调度,包含,Docker Machine
+容器编排与调度,包含,Kubernetes ( K8S )
+容器管理与界面工具,包含,DockerUI
+容器管理与界面工具,包含,Fabric8
+容器管理与界面工具,包含,Shipyard
+容器管理与界面工具,包含,Triton
+容器日志收集,包含,Splunk
+容器日志收集,包含,Flume
+容器日志收集,包含,Fluent
+容器日志收集,包含,Logstash
+容器平台,包含,DaoCloud
+容器平台,包含,TenxCloud
+容器平台,包含,CSphere
+容器平台,包含,StackDock
+Docker核心组件,包含,镜像
+Docker核心组件,包含,容器
+Docker核心组件,包含,仓库
+Docker数据持久化,包含,Volume
+Docker数据持久化,包含,bind mount
+Docker网络,包含,容器互联
+Docker网络,包含,端口映射
+Docker安全,包含,LXC
+Docker安全,包含,RunC
