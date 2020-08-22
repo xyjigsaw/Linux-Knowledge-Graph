@@ -40,7 +40,7 @@ Original data is in [opKG.xlsx](Ops%20KG/opKG.xlsx).
 
 Move all .csv files to Neo4j **import** directory.
 
-Then execute the [CYPHER](Cypher4Neo4j.txt) code in the Neo4j console.
+Execute the [CYPHER](Cypher4Neo4j.txt) code in the Neo4j console.
 
 ## OmegaXYZ
 
